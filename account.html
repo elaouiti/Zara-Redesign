@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Log In - Zara Redesign</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="header">
+	<div class="container">
+		<div class="navbar">
+			<!----<img src="images/hamburger.png" class="menu-icon" onclick="menutoggle()"width="40px" height="40px">---->
+			<div class="logo">
+				<a href="index.html"><img src="images/Zara-logos.png" width="125px"></a>
+			</div>
+			<nav>
+				<ul id="MenuItems">
+					<li> <a href="index.html">HOME</a></li>
+					<li> <a href="products.html">WOMAN</a></li>
+					<li> <a href="products.html">MAN</a></li>
+					<li> <a href="products.html">KIDS</a></li>
+					<li> <a href="products.html">+INFO</a></li>
+					<li> <a href="account.html">LOG IN</a></li>
+				</ul>
+			</nav>
+			<a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+			<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+		</div>
+	</div>
+</div>
+<!----------account page---------->
+<div class="account-page">
+	<div class="container">
+		<div class="row">
+			<div class="col-2">
+				<div class="form-container">
+					<div class="form-btn">
+						<span>LOGIN</span>
+						<hr>
+					</div>
+					<form>
+						<input type="text" placeholder="Username">
+						<input type="password" placeholder="Password">
+						<br>
+						<a href="">Forgot password</a>
+						<a href="index.html" button type="submit" class="btn">LOG IN</a>
+					</form>
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="form-container">
+					<div class="form-btn">
+						<span>REGISTER</span>
+						<p>Don't have an account with us? Register now to keep track of your orders.</p>
+					</div>
+					<form>
+						<input type="text" placeholder="Username">
+						<input type="text" placeholder="Email">
+						<input type="password" placeholder="Password">
+						<a href="index.html" button type="submit" class="btn">REGISTER</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!---------footer---------->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<img src="images/Zara-logo.png">
+				</div>
+				<div class="footer-col-2">
+					<ul>
+						<li>INSTAGRAM  |  FACEBOOK  |  TWITTER  |  PINTEREST  |  YOUTUBE <br></li>
+						<small-2> COOKIES  |  PRIVACY AND COOKIES POLICY  |  TERMS OF USE</small-2>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">Copyright 2021 - Zara Redesign</p>
+		</div>
+	</div>
+</div>
+
+<!--------js for toggle menu----------->
+	<script type="text/javascript">
+		var MenuItems = document.getElementById("MenuItems")
+
+		MenuItems.style.maxHeight = "0px";
+
+		function menutoggle (){
+			if (MenuItems.style.maxHeight == "0px")
+				{
+					MenuItems.style.maxHeight = "200px";
+				}
+			else 
+				{
+					MenuItems.style.maxHeight = "0px";
+
+				}
+		}
+	</script>
+
+
+</body>
+</html>
